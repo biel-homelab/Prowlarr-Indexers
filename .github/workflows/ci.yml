@@ -23,7 +23,7 @@ concurrency:
 jobs:
   lint:
     name: Lint Yaml
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, galadriel]
     steps:
       - uses: actions/checkout@v6
       - name: yamllint version
@@ -34,7 +34,7 @@ jobs:
           yamllint definitions --format github
   schema_validate:
     name: Validate Schema
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, galadriel]
     steps:
     - uses: actions/checkout@v6
     - name: Setup Python
