@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   action:
-    runs-on: [self-hosted, Linux, X64, galadriel]
+    runs-on: [self-hosted, Linux, X64]
     permissions:
       contents: read
       issues: write
